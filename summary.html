@@ -134,9 +134,8 @@
 			<!-- day, week, month Select -->
 		    <div class="row">
 			  <div class="col-md-12 col-sm-12 col-xs-12">
-			  <div class="x_panel">
-				<div class="form-vertical form-label-left col-md-5">
-				  <div id="dateTypeRadio" class="btn-group pull-left" data-toggle="buttons">
+			    <div class="x_panel">
+				  <div id="dateTypeRadio" class="btn-group pull-left" data-toggle="buttons" style="margin:5px 5px 5px 0px;">
 				    <label class="btn btn-default active">
 					  <input type="radio" name="options" id="option1" checked value="DAY"> DAY
 					</label>
@@ -147,38 +146,36 @@
 					  <input type="radio" name="options" id="option3" value="MONTH"> MONTH
 					</label>
 				  </div>
-				
-				<div class="col-md-4 col-sm-2" id="date_day" style="margin-bottom:0px;">
-					<div class="form-group" style="margin-bottom:0px;">
-						<div class='input-group date' id='dateDaypicker' style="margin-bottom:0px;">
-							<input type='text' class="form-control"/>
-							<span class="input-group-addon">
-							   <span class="glyphicon glyphicon-calendar"></span>
-							</span>
-						</div>
-					</div>
-				</div>
-				<div  class="col-md-6"id="reportrange_week" style="display : none;">
-                        <div id="reportrange_right" class="pull-left" style="background: #fff; cursor: pointer; padding: 7px 10px; border: 1px solid #ccc;">
-                          <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                          <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                        </div>
-                </div>
-				<div class="col-md-4 col-sm-2" id="date_month" style="display:none;margin-bottom:0px;">
-					<div class="form-group" style="margin-bottom:0px;">
-						<div class='input-group date' id='dateMonthpicker' style="margin-bottom:0px;">
-							<input type='text' class="form-control" />
-							<span class="input-group-addon">
-							   <span class="glyphicon glyphicon-calendar"></span>
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-1">
-				<button type="button" class="btn btn-dark pull-left" style="margin-bottom : 0px;">조 회</button>
-				</div>
-			  </div>
-			  </div>
+				  <div class="pull-left" id="date_day" style="display:inline-block;width:270.3px;height:34px;margin:5px 5px 5px 0px;">
+				    <div class="form-group" style="margin:0px 0px 0px 0px;">
+				      <div class='input-group date' id='dateDaypicker' style="margin:0px 0px 0px 0px;">
+					    <input type='text' class="form-control"/>
+					      <span class="input-group-addon">
+						    <span class="glyphicon glyphicon-calendar"></span>
+						  </span>
+					  </div>
+				    </div>
+				  </div>
+				  <div  id="reportrange_week" style="display:none;">
+				    <div id="reportrange_right" class="pull-left" style="background: #fff; cursor: pointer; padding: 7px 10px; border: 1px solid #ccc;margin:5px 5px 4px 0px;">
+				      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+					  <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+				    </div>
+                  </div>
+				  <div class='pull-left' id="date_month" style="display:inline-block;width:270.3px;height:34px;margin:5px 5px 5px 0px;">
+				    <div class="form-group" style="margin:0px 0px 0px 0px;">
+				      <div class='input-group date' id='dateMonthpicker' style="margin:0px 0px 0px 0px;">
+					    <input type='text' class="form-control" />
+					      <span class="input-group-addon">
+						    <span class="glyphicon glyphicon-calendar"></span>
+						  </span>
+					  </div>
+				    </div>
+				  </div>
+				  <div  class="pull-left" style="display:inline-block;width:57.89px;height:34px;margin:0px 0px 5px 0px;">
+			        <button type="button" class="btn btn-dark pull-left" style="margin:5px 5px 5px 0px;">조 회</button>
+				  </div>
+			    </div>
 			  </div>
             </div>
 			<!-- /day, week, month Select -->

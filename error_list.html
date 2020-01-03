@@ -124,99 +124,98 @@
             </div>
           </div>
           <!-- /top tiles -->
-		  <div class="row">
-			  <div class="col-md-12 col-sm-12 col-xs-12">
-			  <div class="x_panel">
-		  <!-- Server and Procedure Select -->
-		  <form class="form-vertical form-label-left col-md-6" style="margin-bottom:0px;">
-		  
-		  <div class="form-group col-md-6" style="margin-bottom:0px;">
-		    <label class="control-label col-md-3 col-sm-3 col-xs-12" style="margin-top:8px;">SERVER</label>
-			<div class="col-sm-9 col-xs-12">
-			  <select class="select2_single form-control" tabindex="-1">
-			      <option value="ALL">ALL</option>
-				  <option value="AK">Alaska</option>
-				  <option value="HI">Hawaii</option>
-				  <option value="CA">California</option>
-				  <option value="NV">Nevada</option>
-				  <option value="OR">Oregon</option>
-				  <option value="WA">Washington</option>
-				  <option value="AZ">Arizona</option>
-				  <option value="CO">Colorado</option>
-				  <option value="ID">Idaho</option>
-				  <option value="MT">Montana</option>
-			  </select>
-			</div>
-		  </div>
-		  <!-- Procedure -->
-		  <div class="form-group col-md-6" style="margin-bottom:0px;">
-		    <label class="control-label col-md-3 col-sm-3 col-xs-12" style="margin-top:8px;">PROCEDURE</label>
-			<div class="col-sm-9 col-xs-12">
-              <select class="select2_group form-control">
-                <optgroup label="Alaskan/Hawaiian Time Zone">
-                  <option value="AK">Alaska</option>
-                  <option value="HI">Hawaii</option>
-                </optgroup>
-                <optgroup label="Pacific Time Zone">
-                  <option value="CA">California</option>
-                  <option value="NV">Nevada</option>
-                  <option value="OR">Oregon</option>
-                  <option value="WA">Washington</option>
-                </optgroup>
-              </select>
-            </div>
-          </div>
-		  
-		  </form>
-          <!-- /Server and Procedure Select -->
-		  <!-- day, week, month Select -->
-				<div class="form-vertical form-label-left col-md-5">
-				  <div id="dateTypeRadio" class="btn-group pull-left" data-toggle="buttons">
-				    <label class="btn btn-default active">
-					  <input type="radio" name="options" id="option1" checked value="DAY"> DAY
-					</label>
-					<label class="btn btn-default">
-					  <input type="radio" name="options" id="option2" value="WEEK"> WEEK
-					</label>
-					<label class="btn btn-default">
-					  <input type="radio" name="options" id="option3" value="MONTH"> MONTH
-					</label>
+		 <!-- Server and Procedure, day, week, month Select -->
+		<div class="row">
+		  <div class="col-md-12 col-sm-12 col-xs-12">
+		    <div class="x_panel">
+			  <form class="form-vertical form-label-left col-md-12" style="margin:0px 0px 0px 0px;">
+			    <!-- Server -->
+			    <div class="form-group col-md-3" style="margin:0px 0px 0px 0px;">
+				  <label class="control-label pull-left" style="width:84px;height:19px;margin:13px 5px 5px 0px;">SERVER</label>
+				  <div class="pull-left" style="width:250px;margin:5px 5px 5px 0px;">
+					<select class="select2_single form-control" tabindex="-1">
+					  <option value="ALL">ALL</option>
+					  <option value="AK">Alaska</option>
+					  <option value="HI">Hawaii</option>
+					  <option value="CA">California</option>
+					  <option value="NV">Nevada</option>
+					  <option value="OR">Oregon</option>
+					  <option value="WA">Washington</option>
+					  <option value="AZ">Arizona</option>
+					  <option value="CO">Colorado</option>
+					  <option value="ID">Idaho</option>
+					  <option value="MT">Montana</option>
+					</select>
 				  </div>
-				
-				<div class="col-md-4 col-sm-2" id="date_day" style="margin-bottom:0px;">
-					<div class="form-group" style="margin-bottom:0px;">
-						<div class='input-group date' id='dateDaypicker' style="margin-bottom:0px;">
-							<input type='text' class="form-control"/>
-							<span class="input-group-addon">
-							   <span class="glyphicon glyphicon-calendar"></span>
-							</span>
-						</div>
+				</div>
+				<!-- Procedure -->
+				<div class="form-group col-md-3" style="margin:0px 0px 0px 0px;">
+				  <label class="control-label pull-left" style="width:84px;height:19px;margin:13px 5px 5px 0px;">PROCEDURE</label>
+				  <div class="pull-left" style="width:250px;margin:5px 5px 5px 0px;">
+				    <select class="select2_group form-control">
+				      <optgroup label="Alaskan/Hawaiian Time Zone">
+					    <option value="AK">Alaska</option>
+					    <option value="HI">Hawaii</option>
+					  </optgroup>
+					  <optgroup label="Pacific Time Zone">
+					    <option value="CA">California</option>
+					    <option value="NV">Nevada</option>
+					    <option value="OR">Oregon</option>
+					    <option value="WA">Washington</option>
+					  </optgroup>
+					</select>
+				  </div>
+				</div>
+				<!-- Type Radio -->
+				<div id="dateTypeRadio" class="btn-group pull-left" data-toggle="buttons" style="margin:5px 5px 5px 0px;">
+				  <label class="btn btn-default active">
+					<input type="radio" name="options" id="option1" checked value="DAY"> DAY
+				  </label>
+				  <label class="btn btn-default">
+				    <input type="radio" name="options" id="option2" value="WEEK"> WEEK
+				  </label>
+				  <label class="btn btn-default">
+				    <input type="radio" name="options" id="option3" value="MONTH"> MONTH
+				  </label>
+				</div>
+				<!--DAY -->
+				<div class="pull-left" id="date_day" style="display:inline-block;width:270.3px;height:34px;margin:5px 5px 5px 0px;">
+				  <div class="form-group" style="margin:0px 0px 0px 0px;">
+				    <div class='input-group date' id='dateDaypicker' style="margin:0px 0px 0px 0px;">
+					  <input type='text' class="form-control"/>
+					    <span class="input-group-addon">
+						  <span class="glyphicon glyphicon-calendar"></span>
+						</span>
 					</div>
+				  </div>
 				</div>
-				<div  class="col-md-6"id="reportrange_week" style="display : none;">
-                        <div id="reportrange_left" class="pull-left" style="background: #fff; cursor: pointer; padding: 7px 10px; border: 1px solid #ccc;">
-                          <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                          <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                        </div>
-                </div>
-				<div class="col-md-4 col-sm-2" id="date_month" style="display:none;margin-bottom:0px;">
-					<div class="form-group" style="margin-bottom:0px;">
-						<div class='input-group date' id='dateMonthpicker' style="margin-bottom:0px;">
-							<input type='text' class="form-control" />
-							<span class="input-group-addon">
-							   <span class="glyphicon glyphicon-calendar"></span>
-							</span>
-						</div>
+				<!--WEEK-->
+				<div  id="reportrange_week" style="display:none;">
+				  <div id="reportrange_right" class="pull-left" style="background: #fff; cursor: pointer; padding: 7px 10px; border: 1px solid #ccc;margin:5px 5px 4px 0px;">
+				    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+					<span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+				  </div>
+				</div>
+				<!--MONTH-->
+				<div class='pull-left' id="date_month" style="display:inline-block;width:270.3px;height:34px;margin:5px 5px 5px 0px;">
+				  <div class="form-group" style="margin:0px 0px 0px 0px;">
+				    <div class='input-group date' id='dateMonthpicker' style="margin:0px 0px 0px 0px;">
+					  <input type='text' class="form-control" />
+					    <span class="input-group-addon">
+						  <span class="glyphicon glyphicon-calendar"></span>
+						</span>
 					</div>
+				  </div>
 				</div>
-				<div class="col-md-1">
-				<button type="button" class="btn btn-dark pull-left" style="margin-bottom : 0px;">조 회</button>
+				<!--BUTTON-->
+				<div  class="pull-left" style="display:inline-block;width:57.89px;height:34px;margin:0px 0px 5px 0px;">
+				  <button type="button" class="btn btn-dark pull-left" style="margin:5px 5px 5px 0px;">조 회</button>
 				</div>
-			  </div>
-			  </div>
-            </div>
-			</div>
-		  <!-- /day, week, month Select -->
+			  </form>
+		    </div>
+		  </div>
+        </div>
+		<!-- /Server and Procedure, day, week, month Select -->
 		  <!-- Data Table -->
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
