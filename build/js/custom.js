@@ -649,18 +649,26 @@ if (typeof NProgress != 'undefined') {
 				console.log('run_datatables');
 				
 				if( typeof ($.fn.DataTable) === 'undefined'){ return; }
+				var tableName = "";
+				if($('#datatableSummary').length == 1) {
+					tableName = "datatableSummary";
+				}else if($('#datatableError').length == 1) {
+					tableName = "datatableError";
+				}else if($('#datatableDetail').length == 1) {
+					tableName = "datatableDetail";
+				}
+				if(tableName.length == 0) {return ;}
 				console.log('init_DataTables');
-				
-				$('#datatableSummary').dataTable({
+				$('#'+tableName).dataTable({
 					"searching" : false,
 					"scrollY":        450,
 					"scrollCollapse": true,
 					"lengthMenu": [ 15, 25, 50, 100]
 				});
 				console.log("exec" + "dataTable");
-				var dtable= $('#datatableSummary').DataTable();
-				var thArr = $('#datatableSummary thead th');
-				$('#datatableSummary tbody').on('click', 'tr', function() {
+				var dtable= $('#'+tableName).DataTable();
+				var thArr = $('#'+tableName+' thead th');
+				$('#'+tableName+' tbody').on('click', 'tr', function() {
 					var row = dtable.row(this).data();
 					var content = {};
 					var i = 0;
